@@ -4,10 +4,12 @@ Public landing page and App Store support pages for the Motivational Clock Alarm
 
 ## Live pages
 
-- Landing page: https://motivational-clock-alarm.svgbundle1001.chatgpt.site/
-- Privacy policy: https://motivational-clock-alarm.svgbundle1001.chatgpt.site/privacy.html
-- Support: https://motivational-clock-alarm.svgbundle1001.chatgpt.site/support.html
-- Terms: https://motivational-clock-alarm.svgbundle1001.chatgpt.site/terms.html
+- Landing page: https://filintaa.github.io/motivational-clock-alarm-website/
+- Privacy policy: https://filintaa.github.io/motivational-clock-alarm-website/privacy.html
+- Support: https://filintaa.github.io/motivational-clock-alarm-website/support.html
+- Terms: https://filintaa.github.io/motivational-clock-alarm-website/terms.html
+
+The earlier Sites address remains available at https://motivational-clock-alarm.svgbundle1001.chatgpt.site/.
 
 ## Local preview
 
