@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#fffbee">
   <meta name="description" content="Motivational Clock Alarm connects every alarm to a goal, a message, or a video worth getting up for.">
   <title>Motivational Clock Alarm — Wake up with a reason</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23fffbee'/%3E%3Ccircle cx='32' cy='34' r='19' fill='%23ca003d' stroke='%231a162e' stroke-width='5'/%3E%3Cpath d='M32 22v13l9 5M21 10l-9 9M43 10l9 9' fill='none' stroke='%231a162e' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" href="./assets/app-icon.png">
   <link rel="stylesheet" href="./styles.css">
   <script src="./script.js" defer></script>
 </head>
@@ -14,11 +14,12 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header" data-header>
     <a class="brand" href="#top" aria-label="Motivational Clock Alarm home">
-      <span class="brand-mark" aria-hidden="true"><span></span></span>
+      <img class="brand-logo" src="./assets/app-icon.png" alt="">
       <span>Motivational Clock Alarm</span>
     </a>
     <nav aria-label="Primary navigation">
       <a href="#why">Why it works</a>
+      <a href="#videos">Videos</a>
       <a href="#inside">Inside the app</a>
       <a href="./support.html">Support</a>
     </nav>
@@ -88,6 +89,46 @@
       </div>
     </section>
 
+    <section class="video-library" id="videos" aria-labelledby="videos-title">
+      <div class="video-library-heading reveal">
+        <div>
+          <p class="eyebrow">Your motivation, your way</p>
+          <h2 id="videos-title">Start with ours.<br><em>Make it yours.</em></h2>
+        </div>
+        <div class="video-library-intro">
+          <p>Choose from seven ready-made categories—including morning routine, study, fitness, faith, family, productivity, and financial goals.</p>
+          <p><strong>Prefer something personal?</strong> Pick your own video from Photos or record one in the app. Personal videos stay on your iPhone.</p>
+        </div>
+      </div>
+      <div class="video-grid" aria-label="Example motivation videos">
+        <figure class="video-card reveal">
+          <video controls muted playsinline preload="metadata" aria-label="Morning routine example motivation video">
+            <source src="./assets/videos/morning-routine.m4v" type="video/x-m4v">
+          </video>
+          <figcaption><span>01</span><strong>Morning routine</strong><small>Begin with intention.</small></figcaption>
+        </figure>
+        <figure class="video-card video-card-raised reveal">
+          <video controls muted playsinline preload="metadata" aria-label="Study and learning example motivation video">
+            <source src="./assets/videos/study-learning.m4v" type="video/x-m4v">
+          </video>
+          <figcaption><span>02</span><strong>Study &amp; learning</strong><small>Remember what you are building.</small></figcaption>
+        </figure>
+        <figure class="video-card reveal">
+          <video controls muted playsinline preload="metadata" aria-label="Health and fitness example motivation video">
+            <source src="./assets/videos/health-fitness.m4v" type="video/x-m4v">
+          </video>
+          <figcaption><span>03</span><strong>Health &amp; fitness</strong><small>Move before excuses arrive.</small></figcaption>
+        </figure>
+        <aside class="own-video-note reveal" aria-label="Add your own video">
+          <span class="own-video-plus" aria-hidden="true">+</span>
+          <p class="eyebrow">Your clip goes here</p>
+          <h3>Upload a memory. Record a promise.</h3>
+          <p>Add the person, place, goal, or future you want to wake up for.</p>
+          <b>Photos or camera · Stored locally</b>
+        </aside>
+      </div>
+    </section>
+
     <section class="inside" id="inside" aria-labelledby="inside-title">
       <div class="inside-heading reveal">
         <p class="eyebrow">Inside the app</p>
@@ -128,9 +169,9 @@
   </main>
 
   <footer>
-    <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Motivational Clock Alarm</span></a>
+    <a class="brand footer-brand" href="#top"><img class="brand-logo" src="./assets/app-icon.png" alt=""><span>Motivational Clock Alarm</span></a>
     <p>Wake up with a reason.</p>
-    <div class="footer-links"><a href="./support.html">Support</a><a href="./privacy.html">Privacy</a></div>
+    <div class="footer-links"><a href="./support.html">Support</a><a href="./privacy.html">Privacy</a><a href="./terms.html">Terms</a></div>
     <p class="copyright">© <span data-year></span> Motivational Clock Alarm</p>
   </footer>
 </body>

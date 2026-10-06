@@ -36,6 +36,13 @@ if (!reduceMotion) {
   revealItems.forEach((item) => item.classList.add('is-visible'));
 }
 
-window.addEventListener('scroll', () => {
-  if (header) header.classList.toggle('is-fixed', window.scrollY > 60);
-}, { passive: true });
+if (header) {
+  const sentinel = document.createElement('span');
+  sentinel.setAttribute('aria-hidden', 'true');
+  sentinel.style.cssText = 'position:absolute;inset:60px auto auto 0;width:1px;height:1px;pointer-events:none';
+  document.body.prepend(sentinel);
+  const headerObserver = new IntersectionObserver(([entry]) => {
+    header.classList.toggle('is-fixed', !entry.isIntersecting);
+  });
+  headerObserver.observe(sentinel);
+}
